@@ -1,16 +1,3 @@
-import React from 'react'
-import './homepage.styles.css'
-import Directory from '../../components/directory/Directory'
-
-const Homepage = () => (
-    
-    <div className='homepage'>
-        <Directory />
-    </div>
-)
-
-export default Homepage
-
 
 const SHOP_DATA = [
     {
@@ -259,3 +246,5 @@ const SHOP_DATA = [
       ]
     }
   ]
+
+  export default SHOP_DATA
