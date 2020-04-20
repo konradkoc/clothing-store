@@ -11,6 +11,8 @@
 
   &.large {
     height: 38.2rem;
+    align-items: flex-start ;
+   
   }
   :hover {
     cursor: pointer;
@@ -42,6 +44,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-top: none;
   background-color: white;
   opacity: 0.7;
   position: absolute;
@@ -52,10 +55,29 @@
   margin-bottom: 6px;
   font-size: 22px;
   color: #4a4a4a;
+
 }
 
 .menu-item .content .subtitle {
   font-weight: lighter;
   font-size: 16px;
+}
+
+.menu-item.large:nth-child(1) {
+  justify-content: flex-start;
+}
+
+.menu-item.large:nth-child(2) {
+  justify-content: flex-end;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .menu-item.large:nth-child(1),
+  .menu-item.large:nth-child(2)  {
+    justify-content: center;
+    align-items: center;
+    }
 }
 
