@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import {auth} from '../../firebase/firebase.utils'
-import './header.style.css'
-import {ReactComponent as Logo} from '../../assets/logo.svg'
+import './header.style.scss'
 import { connect } from 'react-redux'
 
 import CartIcon from '../cart-icon/CartIcon'
@@ -14,11 +13,13 @@ import { selectCurrentUser } from '../../redux/user/user.selectors'
 
 
 const Header = ( {currentUser, hidden} ) => (
-    <div className='header'>
-        <Link className ='logo-container' to = '/'>
-             <Logo className='logo' />
-        </Link>
-        <div className='options'>
+    <Fragment>
+        <nav className='options'>
+        
+            <Link className='option home' to='/'>
+                HOME
+            </Link>
+
             <Link className='option' to='/shop'>
                 SHOP
             </Link>
@@ -31,9 +32,10 @@ const Header = ( {currentUser, hidden} ) => (
             }
 
             <CartIcon />
-        </div>
+        </nav>
         {hidden ? null : <CartDropdown />}   
-    </div>
+    </Fragment>
+
 )
 
 const mapStatetoProps = createStructuredSelector({

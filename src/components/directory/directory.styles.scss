@@ -1,0 +1,19 @@
+.directory-menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: (3, 1fr);
+  grid-template-areas:     
+    "women    hats     men"
+    "women  jackets    men"
+    "women  sneakers   men" ;
+  grid-gap: .1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .directory-menu   {
+    display: flex;
+    flex-direction: column;
+    }
+}
+

@@ -1,0 +1,25 @@
+
+.options {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0 ;
+    font-size: 1.3rem;
+
+    .home {
+        flex-grow: 1;
+        justify-self: flex-start;
+        text-align: left;
+    }
+
+    .option {
+        cursor: pointer;
+        padding: 0 1rem;
+    }
+
+}
+

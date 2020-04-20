@@ -1,10 +1,12 @@
 .collection-item {
-    width: 22vw;
     display: flex;
     flex-direction: column;
     height: 350px;
     align-items: center;
     position: relative;
+    grid-row: span 2;
+    grid-column: span 1;
+
   
     .image {
       width: 100%;
@@ -43,11 +45,28 @@
       .name {
         width: 90%;
         margin-bottom: 15px;
+        margin-left: .5em;
+
       }
   
       .price {
         width: 10%;
+        margin-right: .5em;
       }
     }
   }
-  
+
+
+
+  @media screen and (max-width: 800px) {
+    .collection-item  {
+        grid-column: span 2 ;
+      }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .collection-item  {
+        grid-column: span 4 ;
+      }
+  }

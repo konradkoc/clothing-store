@@ -30,3 +30,16 @@
     }
   }
   
+
+  @media screen and (max-width: 900px) {
+    .checkout-page   {
+        width: 100%;
+        padding: 0 1rem;
+
+        .checkout-header {
+          font-size: 0.7rem;
+        }
+      }
+
+  }
+  

@@ -1,12 +1,7 @@
 *{
   box-sizing: border-box;
-}
-
-
-body {
-  font-family: "Open Sans", sans-serif;
-  padding: 20px 60px;
-
+  padding: 0 ;
+  margin: 0;
 }
 
 a {
@@ -14,8 +9,6 @@ a {
   color: black;
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    padding: 10px;
-  }
+body {
+  background-color: #f2f2f2;
 }

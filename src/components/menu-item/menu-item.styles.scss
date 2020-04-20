@@ -1,6 +1,6 @@
 .menu-item {
   min-width: 30%;
-  height: 240px;
+  height: 12rem;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -8,22 +8,14 @@
   border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
+
+  &.large {
+    height: 38.2rem;
+  }
+  :hover {
+    cursor: pointer;
+  }
  
-}
-.menu-item.large {
-  height: 380px;
-}
-
-.menu-item:first-child {
-  margin-right: 7.5px;
-}
-
-.menu-item:last-child {
-  margin-left: 7.5px;
-}
-
-.menu-item:hover {
-  cursor: pointer;
 }
 
 .menu-item:hover .background-image {
@@ -66,3 +58,4 @@
   font-weight: lighter;
   font-size: 16px;
 }
+
