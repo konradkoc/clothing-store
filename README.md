@@ -1,8 +1,8 @@
 E-commerce project from the udemy course that I took. <br />
 Its not the same, due to the fact I was making it after taking a lesson & some things aren't implemented. <br />
-Some things are diffrent simply because I changed them and made them my way <br />
-I decided to use things that I learnt in other projects and not to just code along  <br />
-Rest od this reamde was genereted by create-react-app  <br />
+Some things are diffrent simply because I changed them and made them my way. <br />
+I decided to use things that I learnt in other projects and not to just code along.  <br />
+Rest od this readme was genereted by create-react-app.  <br />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
