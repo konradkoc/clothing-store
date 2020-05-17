@@ -2,14 +2,13 @@
   width: 100%;
   height: 92vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: (5, 1fr);
-  grid-template-areas: 
-    "women  .........  men" 
-    "women    hats     men"
-    "women  jackets    men"
-    "women  sneakers   men" 
-    "women  ........   men";
+  grid-template-areas:
+    "women  hats  men" 
+    "women  hats  men" 
+    "women  jackets men"
+    "women  jackets men"
+    "women  sneakers men" 
+    "women  sneakers men" ;
   grid-gap: .1rem;
 }
 
